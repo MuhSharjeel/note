@@ -1,0 +1,25 @@
+.home{
+
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    outline:none;
+    }
+    
+    .header{
+    
+        width:100%;
+        background-color: rgb(101, 101, 255);
+    }
+
+
+input{
+        cursor: auto;
+    }
+
+.date{
+    cursor: pointer;
+}
+
+.time{
+    cursor: pointer;
+}

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import './Intake_Note.css'
-import Top from '../../components/Top/Top'
+import Tabs from '../../components/Tabs/Tabs'
 import Prescription from '../Second/Prescription/Prescription'
 import {Route} from 'react-router-dom'
 import Header from '../../components/Header/Header'
@@ -39,8 +39,8 @@ class Intake_Note extends Component{
                 
                 <div>
             
-                
-                <Top 
+            <Header />
+                <Tabs 
                     namechange={this.newnameHandler}
                     addresschange={this.init_commentHandler}
                     typechange={this.Final_commentHandler}

@@ -8,7 +8,7 @@ const Header = (props) => {
     return(
     <div className="header">
     <Link to="/">
-    <button className="backtohome" >Note</button>
+    <button className="backtohome" >Home</button>
     </Link>
     <br/>
     </div>
