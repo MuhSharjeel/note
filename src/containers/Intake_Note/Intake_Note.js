@@ -6,6 +6,7 @@ import {Route} from 'react-router-dom'
 import Header from '../../components/Header/Header'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import Section_1 from '../../components/Intake_Note_Views/Section1/Section1'
 
 class Intake_Note extends Component{
 
@@ -62,7 +63,7 @@ class Intake_Note extends Component{
                     <h2>Any content 1</h2>
                   </TabPanel>
                   <TabPanel>
-                    <h2>Any content 2</h2>
+                    <Section_1 />
                   </TabPanel>
                   <TabPanel>
                     <h2>Any content 3</h2>
@@ -93,16 +94,13 @@ class Intake_Note extends Component{
                             
                             />
                         
-                        <span className="parent">
-                        <span className="child">
                         <Prescription 
                             name = {this.state.name}
                             init_comment = {this.state.Init_comment}
                             final_comment = {this.state.Final_comment}
                             date = {this.state.Date}               
                             />
-                            </span>
-                        </span>
+
                     </div>
             );
         }
