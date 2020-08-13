@@ -1,5 +1,6 @@
 import React from 'react'
 import './UI_Options.css'
+import {Link} from 'react-router-dom'
 
 const UI_Options = (props) => {
 
@@ -21,7 +22,7 @@ const UI_Options = (props) => {
         <br/>
 
             <p><input type="radio"/> <span className="dist"/>Blank Note <br/>
-                <input type="radio"/> <span className="dist"/>Intake Note <br/>
+                <input type="radio"/> <span className="dist"/><Link to="/intake-note">Intake Note</Link><br/>
                 <input type="radio"/> <span className="dist"/>Treatment Note <br/>
                 <input type="radio"/> <span className="dist"/>Termination Summary <br/>
                 <input type="radio"/> <span className="dist"/>Blank Note <br/>

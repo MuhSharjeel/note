@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import './Second.css'
 import Header from '../../components/Top/Top'
 import Prescription from './Prescription/Prescription'
+import {Route} from 'react-router-dom'
 
 class Second extends Component{
 
@@ -36,7 +37,9 @@ class Second extends Component{
             return (
                 
                 <div>
-
+                
+                <Route path="/hello" exact render={()=><h1>Hello</h1>}/>
+            
                 <Header 
                     namechange={this.newnameHandler}
                     addresschange={this.init_commentHandler}

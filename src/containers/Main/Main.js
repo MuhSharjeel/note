@@ -5,7 +5,7 @@ import Two_options from '../../components/Face_Options/UI_Options/UI_Option/UI_O
 import Backdrop from '../../components/Face_Options/Backdrop/Backdrop'
 import Second from'../Second/Second'
 //import classes from './Main.css'
-
+import {BrowserRouter} from 'react-router-dom'
 
 class Main extends Component{
 
@@ -63,9 +63,13 @@ class Main extends Component{
                     transform: !(this.state.blank_note) ? 'translateY(0)' : 'translateY(-100vh)',
                     opacity: !(this.state.blank_note) ? '1' : '0'
                 }}>
-                    <Second back= {this.blanknoteHandler}/>
+                
+                    <BrowserRouter>
+                        <Second back= {this.blanknoteHandler}/>
+                    </BrowserRouter>
+                    </div>
+                
                 </div>
-            </div>
             );
         }
     }
