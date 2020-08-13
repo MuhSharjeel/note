@@ -1,12 +1,14 @@
 import React from 'react'
 import './Top.css'
+import {Link} from 'react-router-dom'
 
 const Top = (props) => {
 
     return(
     <div className="header">
-
-    <button className="home" >HOME</button>
+    <Link to="/">
+    <button className="home" >Note</button>
+    </Link>
     <input type="text" onChange={props.namechange} placeholder="Name:" className=""/>
     <input type="date" onChange={props.datechange} className=""/>
     <input type="time" onChange={props.datechange} className=""/>

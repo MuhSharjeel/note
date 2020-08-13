@@ -1,6 +1,9 @@
 .home{
 
 font-family: 'Times New Roman', Times, serif;
+border: none;
+outline:none;
+cursor: pointer;
 }
 
 .header{

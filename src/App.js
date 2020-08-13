@@ -6,15 +6,13 @@ import Second from './containers/Second/Second'
 
 function App() {
   return (
-    <div className="App">
-      
     <div>
+      <div>
     <BrowserRouter>
-
     <Route path="/" exact component={Main}/>
     <Route path="/intake-note" component={Second}/>
     </BrowserRouter>
-    </div>
+      </div>
     </div>
   );
 }

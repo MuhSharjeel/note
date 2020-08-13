@@ -5,9 +5,11 @@ import './Logo.css'
 const Logo = (props) => {
 
     return(
-    <div className="App">
-        <img src={notelogo} alt= "logo" className="App-logo"/>
-    </div>
+    <div className="container">
+        <div className="center">
+            <img src={notelogo} alt= "logo" className="App-logo"/>
+        </div>
+        </div>
     );
 }
 

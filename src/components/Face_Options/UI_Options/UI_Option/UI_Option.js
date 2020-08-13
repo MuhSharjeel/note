@@ -6,10 +6,12 @@ const UI_Option = (props) => {
 
     return(
 
-    <div show={props.blank}>
+    <div show={props.blank} className="container">
     <br/><br/>
-    <button className="new" onClick={props.note}>New Note</button><br/><br/>
-    <button className="dashboard">Dashboard</button>
+    <div className="center">
+        <button className="new" onClick={props.note}>New Note</button><br/><br/>
+        <button className="dashboard">Dashboard</button>
+    </div>
     </div>
     );
 }
