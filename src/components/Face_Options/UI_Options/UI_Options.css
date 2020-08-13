@@ -1,0 +1,76 @@
+.Modal {
+    position: fixed;
+    z-index: 500;
+    background-color: white;
+    width: 70%;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    padding: 16px;
+    left: 15%;
+    top: 30%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+    text-align: left;
+}
+
+@media (min-width: 600px) {
+    .Modal {
+        width: 500px;
+        left: calc(50% - 250px);
+    }
+}
+
+.start{
+    border: 0px;
+    margin: 10px;
+    width: 20%;
+    border-radius: 20px;
+    background-color: rgb(0, 122, 223);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    float: right;
+    cursor: pointer;
+}
+
+
+button{
+    border: 0px;
+
+}
+
+.cansel{
+    
+    border: 0px;
+    margin: 10px;
+    width: 15%;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    float: right;
+    cursor: pointer;
+}
+
+
+.right{
+    float: right;
+    cursor: pointer;
+}
+
+h3{
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.dist{
+
+    padding-right: 20px;
+}
+
+input{
+    
+    cursor: pointer;
+}

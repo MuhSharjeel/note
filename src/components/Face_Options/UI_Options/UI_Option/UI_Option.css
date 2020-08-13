@@ -1,0 +1,27 @@
+.new{
+
+    width: 10%;
+    border-radius: 20px;
+    background-color: steelblue;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+button :hover{
+    background-color: white;
+    color: yellowgreen;
+
+}
+
+.dashboard{
+    width: 10%;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: yellowgreen;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;    
+    cursor: pointer;
+}
