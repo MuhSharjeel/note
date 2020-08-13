@@ -7,9 +7,11 @@ const Header = (props) => {
 
     return(
     <div className="header">
+
     <Link to="/">
-    <button className="backtohome" >Home</button>
+    <span className="backtohome">Home</span>
     </Link>
+    <button className="newnote">+ New Note</button>
     <br/>
     </div>
 
