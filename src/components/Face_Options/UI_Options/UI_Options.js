@@ -30,7 +30,9 @@ const UI_Options = (props) => {
             </p>
         <div>
         <button className="cansel" onClick = {props.remove}>Cansel</button>
-        <button className="start" onClick = {props.blanknote}>Start Note</button>
+        <Link to="/intake-note">
+        <button className="start">Start Note</button>
+        </Link>
         </div>
     </div>
     );
