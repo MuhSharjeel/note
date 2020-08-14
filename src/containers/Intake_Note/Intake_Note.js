@@ -7,101 +7,131 @@ import Header from '../../components/Header/Header'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Section_1 from '../../components/Intake_Note_Views/Section1/Section1'
+import Section_2 from '../../components/Intake_Note_Views/Section2/Section2'
+import Section_3 from '../../components/Intake_Note_Views/Section3/Section3'
+import Section_4 from '../../components/Intake_Note_Views/Section4/Section4'
+import Headings from '../../components/Intake_Note_Views/Headings/Headings'
 
 class Intake_Note extends Component{
 
     state = {
 
         name: "",
-        Init_comment:"",
-        Final_comment:"",
-        Date:"",
-        new_note : false,
-        blank_note: true,
+        address:"",
+        date:"",
+        number:"",
+        birthdate:"",
+        leavemessage:"",
+        status:"",
+        emergency:"",
+        living:"",
+        referral:"",
+        occupation:""
 
-    }
-    
-    newnoteHandler = () => {
-        this.setState({new_note: true});
-    }
-
-    removenewnoteHandler = () => {
-        this.setState({new_note: false});
     }
     
     newnameHandler = (event) => {    
         this.setState({name: event.target.value});
        }
     
-    init_commentHandler = (event) => {    
-        this.setState({Init_comment: event.target.value});
+    addressHandler = (event) => {    
+        this.setState({address: event.target.value});
        }
     
-    Final_commentHandler = (event) => {    
-        this.setState({Final_comment: event.target.value});
+
+    dateHandler = (event) => {    
+        this.setState({date: event.target.value});
        }
-       
-       
-    newdateHandler = (event) => {    
-        this.setState({Date: event.target.value});
+
+    newnumberHandler = (event) => {    
+        this.setState({number: event.target.value});
        }
+    
+       birthdateHandler = (event) => {    
+        this.setState({birthdate: event.target.value});
+       }       
+    
+    leavemessageHandler = (event) => {    
+        this.setState({leavemessage: event.target.value});
+       }
+
+
+    statusHandler = (event) => {    
+        this.setState({status: event.target.value});
+       }
+
+
+    emergencyHandler = (event) => {    
+        this.setState({emergency: event.target.value});
+       }
+
+
+    livingHandler = (event) => {    
+        this.setState({living: event.target.value});
+       }
+
+
+    referralHandler = (event) => {    
+        this.setState({referral: event.target.value});
+       }
+   
+    occupationHandler = (event) => {    
+        this.setState({occupation: event.target.value});
+       }
+   
        
         render () {
-            
-            const Tabs_ = () => (
-                <Tabs>
-                  <TabList>
-                    <Tab>Headings +</Tab>
-                    <Tab>Section 1</Tab>
-                    <Tab>Section 2</Tab>
-                    <Tab>Section 3</Tab>
-                    <Tab>Section 4</Tab>
-                    <Tab>Section 5</Tab>
-                  </TabList>
-              
-                  <TabPanel>
-                    <h2>Any content 1</h2>
-                  </TabPanel>
-                  <TabPanel>
-                    <Section_1 />
-                  </TabPanel>
-                  <TabPanel>
-                    <h2>Any content 3</h2>
-                  </TabPanel>
-                  <TabPanel>
-                    <h2>Any content 4</h2>
-                  </TabPanel>
-                  <TabPanel>
-                    <h2>Any content 5</h2>
-                  </TabPanel>
-                  <TabPanel>
-                    <h2>Any content 6</h2>
-                  </TabPanel>
-                </Tabs>
-              );
 
-            return (
+          return (
                 
-                <div>            
+            <div>            
                         
-                    {/*<Header/>*/}
-                    <Tabs_/>
-                        <General_Info 
-                            namechange={this.newnameHandler}
-                            addresschange={this.init_commentHandler}
-                            typechange={this.Final_commentHandler}
-                            datechange={this.newdateHandler}
-                            
-                            />
-                        
-                        <Prescription 
-                            name = {this.state.name}
-                            init_comment = {this.state.Init_comment}
-                            final_comment = {this.state.Final_comment}
-                            date = {this.state.Date}               
-                            />
+              {/*<Header/>*/}
+              <div className="intake_note">  
+              <Section_1  namechange={this.newnameHandler}
+                          addresschange={this.addressHandler}
+                          datechange   ={this.dateHandler}
+                          numberchange={this.newnumberHandler}
+                          birthdatechange={this.birthdateHandler}
+                          leavemessagechange   ={this.leavemessageHandler}
+                          statuschange={this.statusHandler}
+                          emergencychange={this.emergencyHandler}
+                          livingchange   ={this.livingHandler}
+                          referralchange={this.referralHandler}
+                          occupationchange={this.occupationHandler}
 
-                    </div>
+                          address={this.state.address}
+                          name={this.state.name}
+                          date={this.state.date}
+                          number={this.state.number}
+                          birthdate={this.state.birthdate}
+                          leavemessage={this.state.leavemessage}
+                          status={this.state.status}
+                          emergency={this.state.emergency}
+                          living={this.state.living}
+                          referral={this.state.referral}
+                          occupation={this.state.occupation}/>  
+              <Section_2 />
+              <Section_3 />
+              <Section_4 />
+
+              <General_Info/>
+              </div>
+              <Prescription
+              address={this.state.address}
+              name={this.state.name}
+              date={this.state.date}
+              number={this.state.number}
+              birthdate={this.state.birthdate}
+              leavemessage={this.state.leavemessage}
+              status={this.state.status}
+              emergency={this.state.emergency}
+              living={this.state.living}
+              referral={this.state.referral}
+              occupation={this.state.occupation}               
+                />
+
+              </div>
             );
         }
     }

@@ -6,13 +6,20 @@ const Prescription = (props) => {
     return(
     <div className="pres">
 
-    Prescription!!
+    <center><h2> Prescription!!</h2></center>
     <br/>
     
     <p>Name: {props.name}</p>
-    <p>Initial Comment: {props.init_comment}</p>
-    <p>Final Comment: {props.final_comment}</p>
-    <p>Date: {props.date}</p>
+    <p>Home Address: {props.address !="" ? props.address:""}</p>
+    <p>Session Date:         {props.date !="" ? props.date:""}</p>
+    <p>         {props.number !="" ? props.number:""}</p>
+    <p>         {props.birthdate !="" ? props.birthdate:""}</p>
+    <p>         {props.leavemessage !="" ? props.leavemessage:""}</p>
+    <p>         {props.status !="" ? props.status:""}</p>
+    <p>         {props.emergency !="" ? props.emergency:""}</p>
+    <p>         {props.living !="" ? props.living:""}</p>
+    <p>         {props.referral !="" ? props.referral:""}</p>
+    <p>         {props.occupation !="" ? props.occupation:""}</p>
     
     </div>
     );
