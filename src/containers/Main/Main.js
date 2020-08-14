@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import Logo from '../../components/Logo/Logo'
 import Menu from '../../components/Face_Options/UI_Options/UI_Options'
-import Two_options from '../../components/Face_Options/UI_Options/UI_Option/UI_Option'
+import Two_Options from '../../components/Face_Options/UI_Options/UI_Option/UI_Option'
 import Backdrop from '../../components/Face_Options/Backdrop/Backdrop'
 import Second from'../Second/Second'
 //import classes from './Main.css'
@@ -40,7 +40,7 @@ class Main extends Component{
                     opacity: this.state.blank_note ? '1' : '0',
                 }}>
                     <Logo/>
-                    <Two_options note = {this.newnoteHandler}
+                    <Two_Options note = {this.newnoteHandler}
                                 blank= {this.state.blank_note}/>
                                 
                     <Menu   show= {this.state.new_note} 

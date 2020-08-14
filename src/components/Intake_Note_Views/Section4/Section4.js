@@ -11,7 +11,7 @@ const Section4 = (props) => {
     <h2>INTAKE NOTE (continued)</h2>
  
     <p>Description of Treatment Contract and Informed Consent / Additional Comments:</p><br/>
-    <input type="text" onChange={props.namechange} placeholder="Name:" className=""/><br/>
+    <input type="text" onChange={props.descriptionchange} placeholder="Description..." className=""/><br/>
 
     </div>
     );

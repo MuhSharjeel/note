@@ -26,13 +26,58 @@ class Intake_Note extends Component{
         emergency:"",
         living:"",
         referral:"",
-        occupation:""
+        occupation:"",
+        difficulties:"",
+        history:"",
+        background:"",
+        medical:"",
+        observation:"",
+        impressions:"",
+        recommendation:"",
+        formulation:"",
+        description:"",
 
     }
     
+    backgroundHandler = (event) => {    
+      this.setState({background: event.target.value});
+     }
+
+    medicalHandler = (event) => {    
+      this.setState({medical: event.target.value});
+     }
+    
+    formulationHandler = (event) => {    
+      this.setState({formulation: event.target.value});
+     }
+    
+    recommendationHandler = (event) => {    
+      this.setState({recommendation: event.target.value});
+     }
+    
+    impressionsHandler = (event) => {    
+      this.setState({impressions: event.target.value});
+     }
+    
+    observationHandler = (event) => {    
+      this.setState({observation: event.target.value});
+     }
+    
+    descriptionHandler = (event) => {    
+      this.setState({difficulties: event.target.value});
+     }
+
+    difficultiesHandler = (event) => {    
+      this.setState({difficulties: event.target.value});
+     }
+    
+    historyHandler = (event) => {    
+       this.setState({history: event.target.value});
+      }
+
     newnameHandler = (event) => {    
-        this.setState({name: event.target.value});
-       }
+         this.setState({name: event.target.value});
+        }
     
     addressHandler = (event) => {    
         this.setState({address: event.target.value});
@@ -123,15 +168,26 @@ class Intake_Note extends Component{
 
               </TabPanel>
               <TabPanel>
-                <Section_2 />
+                <Section_2 difficultychange={this.difficultiesHandler}
+                          backgroundchange={this.backgroundHandler}
+                          medicalchange   ={this.medicalHandler}
+                          historychange={this.historyHandler}
+                
+                />
               </TabPanel>
 
               <TabPanel>
-                <Section_3 />
+                <Section_3  observationchange={this.observationHandler}
+                impressionchange={this.impressionsHandler}
+                recommendationchange   ={this.recommendationHandler}
+                formulationchange={this.formulationHandler}
+
+        
+      />
               </TabPanel>
               
               <TabPanel>
-                <Section_4 />
+                <Section_4 descriptionchange={this.descriptionHandler}/>
               </TabPanel>
               
               </Tabs>
@@ -149,7 +205,21 @@ class Intake_Note extends Component{
               emergency={this.state.emergency}
               living={this.state.living}
               referral={this.state.referral}
-              occupation={this.state.occupation}               
+              occupation={this.state.occupation}
+              emergency={this.state.emergency}
+              living={this.state.living}
+              referral={this.state.referral}
+              occupation={this.state.occupation}
+              difficulty={this.state.difficulties}
+              history={this.state.history}
+              background={this.state.background}
+              medical={this.state.medical}                
+              observation={this.state.observation}
+              impression={this.state.impressions}
+              recommendation={this.state.recommendation}
+              formulation={this.state.formulation}
+              description={this.state.description}
+                         
                 />
 
               </div>
