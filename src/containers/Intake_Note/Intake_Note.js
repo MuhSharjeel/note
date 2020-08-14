@@ -85,9 +85,18 @@ class Intake_Note extends Component{
           return (
                 
             <div>            
+            <div className="intake_note">  
                         
               {/*<Header/>*/}
-              <div className="intake_note">  
+              <Tabs>
+                <TabList>
+                <Tab>Section 1</Tab>
+                <Tab>Section 2</Tab>
+                <Tab>Section 3</Tab>
+                <Tab>Section 4</Tab>
+                </TabList>
+
+                <TabPanel>
               <Section_1  namechange={this.newnameHandler}
                           addresschange={this.addressHandler}
                           datechange   ={this.dateHandler}
@@ -111,11 +120,23 @@ class Intake_Note extends Component{
                           living={this.state.living}
                           referral={this.state.referral}
                           occupation={this.state.occupation}/>  
-              <Section_2 />
-              <Section_3 />
-              <Section_4 />
 
-              <General_Info/>
+              </TabPanel>
+              <TabPanel>
+                <Section_2 />
+              </TabPanel>
+
+              <TabPanel>
+                <Section_3 />
+              </TabPanel>
+              
+              <TabPanel>
+                <Section_4 />
+              </TabPanel>
+              
+              </Tabs>
+              
+              
               </div>
               <Prescription
               address={this.state.address}

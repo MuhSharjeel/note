@@ -9,8 +9,8 @@ const Prescription = (props) => {
     <center><h2> Prescription!!</h2></center>
     <br/>
     
-    <p>Name: {props.name}</p>
-    <p>Home Address: {props.address !="" ? props.address:""}</p>
+    <p><h4>Name: </h4>{props.name}</p>
+    <p><h4> Home Address: </h4>{props.address !="" ? props.address:""}</p>
     <p>Session Date:         {props.date !="" ? props.date:""}</p>
     <p>         {props.number !="" ? props.number:""}</p>
     <p>         {props.birthdate !="" ? props.birthdate:""}</p>
