@@ -4,7 +4,7 @@ import Menu from '../../components/Face_Options/UI_Options/UI_Options'
 import Two_Options from '../../components/Face_Options/UI_Options/UI_Option/UI_Option'
 import Backdrop from '../../components/Face_Options/Backdrop/Backdrop'
 import Second from'../Second/Second'
-//import classes from './Main.css'
+import classes from './Main.css'
 
 class Main extends Component{
 
@@ -50,14 +50,6 @@ class Main extends Component{
                             <Backdrop remove = {this.removenewnoteHandler}/>
                 </div>
 
-                <div style={{
-                    transform: !(this.state.blank_note) ? 'translateY(0)' : 'translateY(-100vh)',
-                    opacity: !(this.state.blank_note) ? '1' : '0'
-                }}>
-                        <Second back= {this.blanknoteHandler}/>
-                    
-                    </div>
-                
                 </div>
             );
         }

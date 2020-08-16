@@ -7,7 +7,7 @@ const Logo = (props) => {
     return(
     <div className="container">
         <div className="center">
-            <img src={notelogo} alt= "logo" className="App-logo"/>
+            
         </div>
         </div>
     );

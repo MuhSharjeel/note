@@ -1,0 +1,21 @@
+
+
+.section1{
+ font-family: 'Times New Roman', Times, serif;
+}
+
+input{
+
+    width: 80%;
+    height: 25px;
+    border-radius: 5px;
+    cursor: auto;
+    border-width: thin;
+    border-color: rgb(170, 170, 170);
+}
+
+input:focus {
+    box-shadow: 0 2px 12px 0 rgba(52, 17, 250, 0.16),0 0 0 1px rgba(47, 0, 255, 0.08);
+    outline: none;
+    
+}

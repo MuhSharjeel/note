@@ -1,21 +1,21 @@
 import React, {Component} from 'react'
 import './Intake_Note.css'
-import General_Info from '../../components/Tabs/Tabs'
 import Prescription from '../Second/Prescription/Prescription'
-import {Route} from 'react-router-dom'
-import Header from '../../components/Header/Header'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Section_1 from '../../components/Intake_Note_Views/Section1/Section1'
 import Section_2 from '../../components/Intake_Note_Views/Section2/Section2'
 import Section_3 from '../../components/Intake_Note_Views/Section3/Section3'
 import Section_4 from '../../components/Intake_Note_Views/Section4/Section4'
-import Headings from '../../components/Intake_Note_Views/Headings/Headings'
+import { Layout } from 'antd';
+import Header_ from '../../components/Header/Header'
+
+const { Header, Footer, Sider, Content } = Layout;
 
 class Intake_Note extends Component{
 
     state = {
-
+ 
         name: "",
         address:"",
         date:"",
@@ -64,7 +64,7 @@ class Intake_Note extends Component{
      }
     
     descriptionHandler = (event) => {    
-      this.setState({difficulties: event.target.value});
+      this.setState({description: event.target.value});
      }
 
     difficultiesHandler = (event) => {    
@@ -129,18 +129,26 @@ class Intake_Note extends Component{
 
           return (
                 
-            <div>            
+            
+            <div>
+            <Layout>
+            <Header><Header_/></Header>
+            </Layout>
+              
             <div className="intake_note">  
-                        
-              {/*<Header/>*/}
-              <Tabs>
+            <div className="left-tab">    
+            <Tabs >
                 <TabList>
-                <Tab>Section 1</Tab>
-                <Tab>Section 2</Tab>
-                <Tab>Section 3</Tab>
-                <Tab>Section 4</Tab>
+                <Tab style={{backgroundColor:'#ed6d61',color:'white',padding:'10px',fontSize:'20px',marginRight:'2px'}}><b>+ Heading</b></Tab>
+                <Tab style={{backgroundColor:'#6b5b95',color:'white',padding:'10px',fontSize:'20px',marginRight:'2px'}}><b>Section 1</b></Tab>
+                <Tab style={{backgroundColor:'#558dd1',color:'white',padding:'10px',fontSize:'20px',marginRight:'2px'}}><b>Section 2</b></Tab>
+                <Tab style={{backgroundColor:'#00a591',color:'white',padding:'10px',fontSize:'20px',marginRight:'2px'}}><b>Section 3</b></Tab>
+                <Tab style={{backgroundColor:'#a3b927',color:'white',padding:'10px',fontSize:'20px',marginRight:'2px'}}><b>Section 4</b></Tab>
                 </TabList>
 
+                <TabPanel>
+                  This Headings Section.
+                </TabPanel>
                 <TabPanel>
               <Section_1  namechange={this.newnameHandler}
                           addresschange={this.addressHandler}
@@ -191,7 +199,7 @@ class Intake_Note extends Component{
               </TabPanel>
               
               </Tabs>
-              
+              </div>
               
               </div>
               <Prescription
@@ -221,7 +229,7 @@ class Intake_Note extends Component{
               description={this.state.description}
                          
                 />
-
+    
               </div>
             );
         }

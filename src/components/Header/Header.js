@@ -1,18 +1,24 @@
 import React from 'react'
 import './Header.css'
 import {Link} from 'react-router-dom'
-import '../../../node_modules/font-awesome/css/font-awesome.min.css'
+import { FaHome, FaRegQuestionCircle,FaPlus } from 'react-icons/fa';
+import { AiFillSetting } from 'react-icons/ai';
+import {BsPersonFill} from 'react-icons/bs'
 
 const Header = (props) => {
 
     return(
-    <div className="header">
+    <div>
 
     <Link to="/">
-    <span className="backtohome">Home</span>
+    <span className="backtohome"><FaHome /> Note Designer</span>
     </Link>
-    <button className="newnote">+ New Note</button>
-    <br/>
+    <span className="addnewnote"><FaPlus /> New Note</span>
+    <span className="help"><FaRegQuestionCircle /> Help</span>
+    <span className="help"><AiFillSetting /> Preferences</span>
+    <span className="help"><BsPersonFill /> Sign In</span>    
+
+
     </div>
 
     );

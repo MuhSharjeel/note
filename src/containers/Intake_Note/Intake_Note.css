@@ -27,3 +27,34 @@
     float: left;
     width: 50%;
 }
+
+.left-tab{
+
+    margin:20px;
+    border:2px black;
+}
+
+
+.parent{
+
+}
+
+@import '../../../node_modules/antd/dist/antd.css';
+
+.code-box-demo {
+  text-align: center;
+}
+.ant-layout-header,
+.ant-layout-footer {
+  background: #7dbcea;
+  color: #fff;
+}
+[data-theme="dark"] .ant-layout-header {
+  background: #6aa0c7;
+}
+
+
+.section1style{
+
+    background-color:linear-gradient(to right, #67b26b, #4ca2cb)
+}

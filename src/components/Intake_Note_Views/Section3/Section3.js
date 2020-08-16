@@ -5,24 +5,24 @@ const Section3 = (props) => {
 
     return(
         
-    <div>
+    <div className="section3">
 
     <h2>INTAKE NOTE (continued)</h2>
- 
-    <p>Clinical Observations and Impressions:</p><br/>
+    <b>
+    <p>Clinical Observations and Impressions:</p>
     <input type="text" onChange={props.observationchange}/>
     
-    <p>Diagnostic Impressions:</p><br/>
+    <p>Diagnostic Impressions:</p>
     <input type="text" onChange={props.impressionchange}/>
         
-    <p>Preliminary Clinical Formulation::</p><br/>
+    <p>Preliminary Clinical Formulation::</p>
     <input type="text" onChange={props.recommendationchange}/>
                 
-    <p>Recommendations and Preliminary Treatment Plan:</p><br/>
+    <p>Recommendations and Preliminary Treatment Plan:</p>
     <input type="text" onChange={props.formulationchange}/>
 
-    <p>[Continued next section:]</p>
-
+    <p style={{float:"right"}}><b>[Continued next section:]</b></p>
+    </b>
     </div>
     );
 }

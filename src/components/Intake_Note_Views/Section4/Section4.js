@@ -6,13 +6,13 @@ const Section4 = (props) => {
 
     return(
         
-    <div>
+    <div className="section4">
 
     <h2>INTAKE NOTE (continued)</h2>
- 
-    <p>Description of Treatment Contract and Informed Consent / Additional Comments:</p><br/>
-    <input type="text" onChange={props.descriptionchange} placeholder="Description..." className=""/><br/>
-
+    <b>
+    <p>Description of Treatment Contract and Informed Consent / Additional Comments:<br/><br/>
+    <input type="text" onChange={props.descriptionchange} placeholder="Description..." className="description"/><br/></p><br/>
+    </b>
     </div>
     );
 }
