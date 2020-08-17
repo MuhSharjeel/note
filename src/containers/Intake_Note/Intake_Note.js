@@ -131,25 +131,26 @@ class Intake_Note extends Component{
                 
             
             <div>
+            
             <Layout>
             <Header><Header_/></Header>
             </Layout>
               
-            <div className="intake_note">  
+            <div>  
             <div className="left-tab">    
-            <Tabs >
-                <TabList>
-                <Tab style={{backgroundColor:'#ed6d61',color:'white',padding:'10px',fontSize:'20px',marginRight:'2px'}}><b>+ Heading</b></Tab>
-                <Tab style={{backgroundColor:'#6b5b95',color:'white',padding:'10px',fontSize:'20px',marginRight:'2px'}}><b>Section 1</b></Tab>
-                <Tab style={{backgroundColor:'#558dd1',color:'white',padding:'10px',fontSize:'20px',marginRight:'2px'}}><b>Section 2</b></Tab>
-                <Tab style={{backgroundColor:'#00a591',color:'white',padding:'10px',fontSize:'20px',marginRight:'2px'}}><b>Section 3</b></Tab>
-                <Tab style={{backgroundColor:'#a3b927',color:'white',padding:'10px',fontSize:'20px',marginRight:'2px'}}><b>Section 4</b></Tab>
-                </TabList>
+              <Tabs defaultIndex={1} onSelect={{color:'red'}}>
+                  <TabList>
+                  <Tab style={{backgroundColor:'#ed6d61',color:'white',padding:'10px',fontSize:'20px',marginRight:'2px'}}><b>Headings + </b></Tab>
+                  <Tab style={{backgroundColor:'#6b5b95',color:'white',padding:'10px',fontSize:'20px',marginRight:'2px'}}><b>Section 1</b></Tab>
+                  <Tab style={{backgroundColor:'#558dd1',color:'white',padding:'10px',fontSize:'20px',marginRight:'2px'}}><b>Section 2</b></Tab>
+                  <Tab style={{backgroundColor:'#00a591',color:'white',padding:'10px',fontSize:'20px',marginRight:'2px'}}><b>Section 3</b></Tab>
+                  <Tab style={{backgroundColor:'#a3b927',color:'white',padding:'10px',fontSize:'20px',marginRight:'2px'}}><b>Section 4</b></Tab>
+                  </TabList>
 
-                <TabPanel>
-                  This Headings Section.
-                </TabPanel>
-                <TabPanel>
+                  <TabPanel>
+                    This Headings Section.
+                  </TabPanel>
+                  <TabPanel>
               <Section_1  namechange={this.newnameHandler}
                           addresschange={this.addressHandler}
                           datechange   ={this.dateHandler}
@@ -202,6 +203,7 @@ class Intake_Note extends Component{
               </div>
               
               </div>
+              <div className="right-tab">
               <Prescription
               address={this.state.address}
               name={this.state.name}
@@ -229,7 +231,7 @@ class Intake_Note extends Component{
               description={this.state.description}
                          
                 />
-    
+                </div>
               </div>
             );
         }

@@ -2,30 +2,42 @@
     float: right;
     width: 50%;
     font-family: 'Times New Roman', Times, serif;
-}
+    margin:15px;
+    background-color: rgb(247, 247, 247);
+    padding: 15px;
+    border-radius: 10px;
+    width: 45%;
+    height:100%;
+    overflow: auto;
+    overflow-y: auto;
+    overflow-x: none;
+    }
+    
 
-
+ 
 .export{
 
-padding: 10px;
+padding: 5px;
 border-radius: 5px;
 background-color: blue;
 color: white;
 margin: 10px;
 font-family: 'Times New Roman', Times, serif;
 font-size: 15px;
+outline:none;
 
 }
 
 .copy{
 
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     background-color: blue;
     color: white;
     margin: 10px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
+    outline:none;
 
 }
 
@@ -40,12 +52,42 @@ button:hover{
 
 .save{
 
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     background-color: blue;
     color: white;
     margin: 10px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
+    outline:none;
+    outline:none;
+
+}
+
+.clear{
+
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(180, 6, 6);
+    color: white;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    outline:none;
+    float: right;
+
+}
+
+.clear:hover{
+
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(245, 2, 2);
+    color: white;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    outline:none;
+    float: right;
 
 }

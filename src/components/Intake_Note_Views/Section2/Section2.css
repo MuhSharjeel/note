@@ -10,3 +10,20 @@
        height: 25px;
    
    }
+
+   .input{
+
+    width: 90%;
+    height: 25px;
+    border-radius: 5px;
+    cursor: auto;
+    border-width: thin;
+    color: black;
+}
+
+
+p{
+
+    font-size: 18px;
+    color: black;
+}

@@ -1,5 +1,8 @@
 import React from 'react'
 import './Section4.css'
+import { Input } from 'antd';
+
+const { TextArea } = Input;
 
 const Section4 = (props) => {
 
@@ -11,7 +14,8 @@ const Section4 = (props) => {
     <h2>INTAKE NOTE (continued)</h2>
     <b>
     <p>Description of Treatment Contract and Informed Consent / Additional Comments:<br/><br/>
-    <input type="text" onChange={props.descriptionchange} placeholder="Description..." className="description"/><br/></p><br/>
+    <TextArea rows={4} onChange={props.descriptionchange} placeholder="Description..." className="description"/>
+    </p>
     </b>
     </div>
     );
