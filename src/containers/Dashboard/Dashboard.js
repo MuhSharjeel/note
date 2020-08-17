@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import { Layout } from 'antd';
 import './Dashboard.css'
 import Header_ from '../../components/Header/Header'
+import SideBar  from './SideBar/SideBar'
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -18,10 +19,8 @@ class Main extends Component{
             <Layout>
             <Header><Header_/></Header>
             <Layout>
-              <Sider>Sider</Sider>
-              <Content>Content</Content>
+              <Content><SideBar/></Content>
             </Layout>
-            <Footer>Footer</Footer>
           </Layout>
             </div>
             );

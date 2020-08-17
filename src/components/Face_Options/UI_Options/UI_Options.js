@@ -22,11 +22,11 @@ const UI_Options = (props) => {
         */}
                  <h4>
                  <div className="container">
-                 <Link to="/intake-note"><button className="btn btn1" onClick = {props.remove}>Blank Note</button></Link><br/>
+                 <Link to="/intake-note"><button className="btn btn1" onClick = {props.remove}>Basic Note</button></Link><br/>
                  <Link to="/intake-note"><button className="btn btn1" onClick = {props.remove}>Intake note</button></Link><br/>
                  <Link to="/intake-note"><button className="btn btn1" onClick = {props.remove}>Treatment Note</button></Link><br/>
-                 <Link to="/intake-note"><button className="btn btn1" onClick = {props.remove}>Termination Summary</button></Link><br/>
-                 <Link to="/intake-note"><button className="btn btn1" onClick = {props.remove}>Blank Note</button></Link><br/>
+                 <Link to="/termination-summary"><button className="btn btn1" onClick = {props.remove}>Termination Summary</button></Link><br/>
+                 <Link to="/blank-note"><button className="btn btn1" onClick = {props.remove}>Blank Note</button></Link><br/>
                  <Link to="/intake-note"><button className="btn btn1" onClick = {props.remove}>SOAP</button></Link><br/>
                  </div>
                 </h4>

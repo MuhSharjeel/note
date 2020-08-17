@@ -1,18 +1,18 @@
 import React, {Component} from 'react'
-import './Intake_Note.css'
-import Prescription from '../Second/Prescription/Prescription'
+import './Termination_Summary.css'
+import Prescription from '../../components/TS-Prescription/Prescription'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import Section_1 from '../../components/Intake_Note_Views/Section1/Section1'
-import Section_2 from '../../components/Intake_Note_Views/Section2/Section2'
-import Section_3 from '../../components/Intake_Note_Views/Section3/Section3'
-import Section_4 from '../../components/Intake_Note_Views/Section4/Section4'
+import Section_1 from '../../components/Termination_Sumary_Views/Section1/Section1'
+import Section_2 from '../../components/Termination_Sumary_Views/Section2/Section2'
+import Section_3 from '../../components/Termination_Sumary_Views/Section3/Section3'
+import Section_4 from '../../components/Termination_Sumary_Views/Section4/Section4'
 import { Layout } from 'antd';
 import Header_ from '../../components/Header/Header'
 
 const { Header, Footer, Sider, Content } = Layout;
 
-class Intake_Note extends Component{
+class Termination_Summary extends Component{
 
     state = {
  
@@ -237,4 +237,4 @@ class Intake_Note extends Component{
         }
     }
     
-export default Intake_Note;
+export default Termination_Summary;

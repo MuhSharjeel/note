@@ -3,26 +3,25 @@ import './Prescription.css'
 import { FaFileSignature, FaRegCopy,FaFileExport } from "react-icons/fa";
 import { AiOutlineClear } from "react-icons/ai";
 import { jsPDF } from "jspdf";
-
+import html2canvas from 'html2canvas';
 // Default export is a4 paper, portrait, using millimeters for units
 
 
 const Prescription = (props) => {
 
     const doc = new jsPDF();
-
-    
+    doc.text("Hello world!", 10, 10);
     
     return(
     <div className="pres">
     
-    <button className="export" onClick={() => doc.save("a4.pdf") }><b><FaFileExport/> Export</b></button>
+    <button className="export" onClick={() => doc.save("Intake-Note.pdf") }><b><FaFileExport/> Export</b></button>
     <button className="copy"><b><FaRegCopy/> Copy</b></button>
     
     <button className="save"><b><FaFileSignature/> Final Edit</b></button>
-    <button className="clear" onClick={() => alert("Are you sure to clear content")}><b><AiOutlineClear/> Clear</b></button>
+    <button className="clear" onClick={() =>alert("Are you sure to clear content")}><b><AiOutlineClear/> Clear</b></button>
 
-    <center><h2> Intake Note</h2></center>
+    <center><h1> Intake Note</h1></center>
     
     <p><b>Name: </b>{props.name}</p>
     <p>         {props.address !=="" ? <span> <b>Home Address:</b> {props.address}</span>:""}</p>
