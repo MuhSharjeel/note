@@ -7,7 +7,7 @@ import Section_1 from '../../components/Termination_Sumary_Views/Section1/Sectio
 import Section_2 from '../../components/Termination_Sumary_Views/Section2/Section2'
 import Section_3 from '../../components/Termination_Sumary_Views/Section3/Section3'
 import Section_4 from '../../components/Termination_Sumary_Views/Section4/Section4'
-import { Layout } from 'antd';
+import { Layout } from 'antd'
 import Header_ from '../../components/Header/Header'
 
 const { Header, Footer, Sider, Content } = Layout;
@@ -132,13 +132,13 @@ class Termination_Summary extends Component{
             
             <div>
             
-            <Layout>
-            <Header><Header_/></Header>
-            </Layout>
+          
+          <Header_/>
+          
               
             <div>  
             <div className="left-tab">    
-              <Tabs defaultIndex={1} onSelect={{color:'red'}}>
+              <Tabs defaultIndex={1} style={{padding:"2px"}}>
                   <TabList>
                   <Tab style={{backgroundColor:'#ed6d61',color:'white',padding:'10px',fontSize:'20px',marginRight:'2px'}}><b>Headings + </b></Tab>
                   <Tab style={{backgroundColor:'#6b5b95',color:'white',padding:'10px',fontSize:'20px',marginRight:'2px'}}><b>Section 1</b></Tab>
@@ -231,6 +231,7 @@ class Termination_Summary extends Component{
               description={this.state.description}
                          
                 />
+
                 </div>
               </div>
             );

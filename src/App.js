@@ -12,7 +12,6 @@ function App() {
     <div>
       <div>
 
-
     <BrowserRouter>
       <Route path="/" exact component={Main}/>
       <Route path="/intake-note" component={Intake_Note}/>

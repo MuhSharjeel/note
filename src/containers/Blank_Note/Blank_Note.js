@@ -130,14 +130,12 @@ class Blank_Note extends Component{
           return (
                 
             
-            <div>
+            <div >
             
-            <Layout>
-            <Header><Header_/></Header>
-            </Layout>
+            <Header_/>
               
             <div>  
-            <div className="left-tab">    
+            <div className="left-tab" >    
               <Tabs defaultIndex={1} onSelect={{color:'red'}}>
                   <TabList>
                   <Tab style={{backgroundColor:'#ed6d61',color:'white',padding:'10px',fontSize:'20px',marginRight:'2px'}}><b>Headings + </b></Tab>

@@ -132,9 +132,7 @@ class Intake_Note extends Component{
             
             <div>
             
-            <Layout>
-            <Header><Header_/></Header>
-            </Layout>
+            <Header_/>
               
             <div>  
             <div className="left-tab">    

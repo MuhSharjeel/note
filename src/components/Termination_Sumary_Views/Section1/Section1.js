@@ -1,6 +1,7 @@
 import React from 'react'
 import './Section1.css'
 import { Input } from 'antd';
+import { AiOutlineClose } from 'react-icons/ai';
 
 const Section1 = (props) => {
 
@@ -12,7 +13,7 @@ const Section1 = (props) => {
     <h2><b>TERMINATION SUMMARY</b></h2>
     <b>
     <p>Name:<br/>
-    <Input size="large" onChange={props.namechange} value={props.name} className="input" />
+    <Input size="large" onChange={props.namechange} value={props.name} className="input"  />
     </p>
       
     <p>Date of Termination Summary:<br/>

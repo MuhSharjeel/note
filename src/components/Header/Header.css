@@ -1,52 +1,24 @@
-.header{
+button{
 
-    width: 100%;
-}
-
-
-.newnote{
-
-    font-family: 'Times New Roman', Times, serif;
+    background: transparent;
     font-size: 20px;
-    color: white;
-    margin: 10px 10px;
-    border-radius: 12px;
-    color:black;
+    color: rgb(0, 122, 223);
+    padding: 0px 10px;
+    border-radius: 5px;
+    margin: 1px;
 }
 
-.backtohome{
+button:hover{
 
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: white;
-    margin: 10px;
-    text-align: center;
-    padding: 0px;
-
-}
-
-
-
-.addnewnote{
-
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
-    color: white;
-    margin: 10px;
-    text-align: center;
-    padding: 0px;
-    cursor: pointer;
-
+    color: whitesmoke;
 }
 
 .help{
 
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
-    color: white;
-    margin: 10px;
-    text-align: center;
-    padding: 0px;
-    cursor: pointer;
+    float: right;
+}
 
+span{
+    margin-left: 10px;
+    font-size: 20px;
 }
