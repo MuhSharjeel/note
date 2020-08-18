@@ -11,7 +11,7 @@ const Section2 = (props) => {
         
     <div className="section2">
     
-    <h2><b>TERMINATION SUMMARY (continued)</b></h2>
+    <h2><b>BLANK NOTE (continued)</b></h2>
     <b>
     <p>Introductory comments, if any: <br/>
     <TextArea rows={3} onChange={props.leavemessagechange} className="input"/>

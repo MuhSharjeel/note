@@ -11,7 +11,7 @@ const Section4 = (props) => {
         
     <div className="section4">
 
-    <h2><b>TERMINATION SUMMARY (continued)</b></h2>
+    <h2><b>BLANK NOTE (continued)</b></h2>
     <b>
     <p>Therapeutic Developments: <br/>
     <TextArea rows={4} onChange={props.impressionchange} placeholder="Comments..." className="description"/>

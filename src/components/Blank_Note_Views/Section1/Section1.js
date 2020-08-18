@@ -9,7 +9,7 @@ const Section1 = (props) => {
         
     <div className="section1">
 
-    <h2><b>Blank Note</b></h2>
+    <h2><b>BLANK NOTE</b></h2>
     <b>
     <p>Name:<br/>
     <Input size="large" onChange={props.namechange} value={props.name} className="input" />
