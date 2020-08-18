@@ -21,7 +21,7 @@ const Prescription = (props) => {
     <button className="save"><b><FaFileSignature/> Final Edit</b></button>
     <button className="clear" onClick={() =>alert("Are you sure to clear content")}><b><AiOutlineClear/> Clear</b></button>
 
-    <center><h1> Termination Summary</h1></center>
+    <center><h1> Blank Note</h1></center>
     
     <p><b>Name: </b>{props.name}</p>
     <p>         {props.address !=="" ? <span> <b>Home Address:</b> {props.address}</span>:""}</p>

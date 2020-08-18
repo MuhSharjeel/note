@@ -10,7 +10,7 @@ const Section3 = (props) => {
         
     <div className="section3">
 
-    <h2><b>TERMINATION SUMMARY (continued)</b></h2>
+    <h2><b>BLANK NOTE (continued)</b></h2>
     <b>
     <p>Main themes of the session:    <br/>
     <TextArea rows={3} onChange={props.medicalchange} className="input"/>
