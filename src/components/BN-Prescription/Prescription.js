@@ -25,18 +25,18 @@ const Prescription = (props) => {
     
     <p><b>Name: </b>{props.name}</p>
     <p>         {props.address !=="" ? <span> <b>Home Address:</b> {props.address}</span>:""}</p>
-    <p>         {props.date !=="" ? <span><b>Session Duration: </b> {props.date}</span>:""}</p>
+    <p>         {props.date !=="" ? <span><b>Date of Session: </b> {props.date}</span>:""}</p>
     <p>         {props.number !=="" ? <span><b>Session Fee: </b> {props.number}</span>:""}</p>
-    <p>         {props.birthdate !=="" ? <span><b>Introductory comments, if any: </b> {props.birthdate}</span>:""}</p>
-    <p>         {props.leavemessage !=="" ? <span><b>Overall functioning: </b> {props.leavemessage}</span>:""}</p>
-    <p>         {props.difficulty !=="" ? <span><b>Affective and emotion state: </b> {props.difficulty}</span>:""}</p>
-    <p>         {props.history !=="" ? <span><b>Mental state: </b> {props.history}</span>:""}</p>
-    <p>         {props.background !=="" ? <span><b>Main themes of the session: </b> {props.background}</span>:""}</p>
-    <p>         {props.medical !=="" ? <span><b>Main Therapeutic interventions: </b> {props.medical}</span>:""}</p>
-    <p>         {props.observation !=="" ? <span><b>Therapeutic Developments: </b> {props.observation}</span>:""}</p>
-    <p>         {props.impression !=="" ? <span><b>Treatment Plan: </b> {props.impression}</span>:""}</p>
+    <p>         {props.birthdate !=="" ? <span><b>Session Duration: </b> {props.birthdate}</span>:""}</p>
+    <p>         {props.leavemessage !=="" ? <span><b>Introductory comments, if any: </b> {props.leavemessage}</span>:""}</p>
+    <p>         {props.difficulty !=="" ? <span><b>Overall functioning: </b> {props.difficulty}</span>:""}</p>
+    <p>         {props.history !=="" ? <span><b>Affective and emotion state: </b> {props.history}</span>:""}</p>
+    <p>         {props.background !=="" ? <span><b>Mental state: </b> {props.background}</span>:""}</p>
+    <p>         {props.medical !=="" ? <span><b>Main themes of the session: </b> {props.medical}</span>:""}</p>
+    <p>         {props.observation !=="" ? <span><b>Main Therapeutic interventions: </b> {props.observation}</span>:""}</p>
+    <p>         {props.impression !=="" ? <span><b>Therapeutic Developments: </b> {props.impression}</span>:""}</p>
+    <p>         {props.recommendation !=="" ? <span><b>Treatment Plan: </b> {props.recommendation}</span>:""}</p>
     <p>         {props.formulation !=="" ? <span><b>Outlook and Ongoing Issues: </b> {props.formulation}</span>:""}</p>
-    <p>         {props.recommendation !=="" ? <span><b>Additional comments: </b> {props.recommendation}</span>:""}</p>
     <p>         {props.description !=="" ? <span><b>Additional Comments: </b> {props.description}</span>:""}</p>
                 
     </div>

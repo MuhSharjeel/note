@@ -154,7 +154,6 @@ class Blank_Note extends Component{
                           datechange   ={this.dateHandler}
                           numberchange={this.newnumberHandler}
                           birthdatechange={this.birthdateHandler}
-                          leavemessagechange   ={this.leavemessageHandler}
                           statuschange={this.statusHandler}
                           emergencychange={this.emergencyHandler}
                           livingchange   ={this.livingHandler}
@@ -177,24 +176,25 @@ class Blank_Note extends Component{
               <TabPanel>
                 <Section_2 difficultychange={this.difficultiesHandler}
                           backgroundchange={this.backgroundHandler}
-                          medicalchange   ={this.medicalHandler}
                           historychange={this.historyHandler}
+                          leavemessagechange   ={this.leavemessageHandler}
                 
                 />
               </TabPanel>
 
               <TabPanel>
                 <Section_3  observationchange={this.observationHandler}
-                impressionchange={this.impressionsHandler}
-                recommendationchange   ={this.recommendationHandler}
-                formulationchange={this.formulationHandler}
+                medicalchange   ={this.medicalHandler}
 
         
       />
               </TabPanel>
               
               <TabPanel>
-                <Section_4 descriptionchange={this.descriptionHandler}/>
+                <Section_4 descriptionchange={this.descriptionHandler}
+                impressionchange={this.impressionsHandler}
+                recommendationchange   ={this.recommendationHandler}
+                formulationchange={this.formulationHandler}/>
               </TabPanel>
               
               </Tabs>

@@ -14,7 +14,7 @@ const Section2 = (props) => {
     <h2><b>TERMINATION SUMMARY (continued)</b></h2>
     <b>
     <p>Introductory comments, if any: <br/>
-    <TextArea rows={3} onChange={props.occupationchange} className="input"/>
+    <TextArea rows={3} onChange={props.leavemessagechange} className="input"/>
     </p>
     <p>Overall functioning: <br/>
     <TextArea rows={3} onChange={props.difficultychange} className="input"/>
