@@ -5,9 +5,8 @@ import {AiFillCloseCircle} from 'react-icons/ai'
 
 const UI_Options = (props) => {
 
-
     return(
-        
+
     <div
         className="Modal"
         style={{
@@ -23,8 +22,6 @@ const UI_Options = (props) => {
             <p>
             Welcome to Note Designer:<br/>
             Here will be the Data Regarding Help. </p>
-            
-
         <div>
         <button className="cansel" onClick = {props.remove}>Cansel</button>
         
