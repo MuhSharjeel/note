@@ -23,8 +23,7 @@ const UI_Options = (props) => {
             Welcome to Note Designer:<br/>
             Here will be the Data Regarding Help. </p>
         <div>
-        <button className="cansel" onClick = {props.remove}>Cansel</button>
-        
+        <button className="cansel" onClick = {props.remove}>Cansel</button>        
         </div>
     </div>
     );
